@@ -1,0 +1,28 @@
+{
+  "name": "Berita Malaysia Terkini",
+  "short_name": "Berita MY",
+  "description": "Kumpulan berita Malaysia daripada pelbagai sumber dalam satu tempat.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f3460",
+  "theme_color": "#0f3460",
+  "lang": "ms",
+  "dir": "ltr",
+  "categories": ["news", "magazines"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
