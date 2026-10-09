@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Berita Malaysia Terkini</title>
+  <meta name="description" content="Kumpulan berita Malaysia daripada pelbagai sumber dalam satu tempat.">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f3460">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Berita MY">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="flag">🇲🇾</span>
+        <div>
+          <h1>Berita Malaysia Terkini</h1>
+          <p>Semua berita Malaysia dalam satu tempat</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="btn-pasang" class="btn-icon" title="Pasang aplikasi" hidden>⬇️</button>
+        <button id="btn-tema" class="btn-icon" title="Tukar tema">🌙</button>
+        <button id="btn-refresh" class="btn-icon" title="Muat semula">🔄</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigasi kategori -->
+  <nav class="kategori-nav" id="kategori-nav" aria-label="Kategori berita"></nav>
+
+  <!-- Kawalan tapisan -->
+  <section class="controls">
+    <div class="controls-inner">
+      <input
+        type="search"
+        id="carian"
+        class="carian"
+        placeholder="Cari berita..."
+        autocomplete="off"
+      >
+
+      <select id="tapisan-bahasa" class="pilih">
+        <option value="">Semua bahasa</option>
+        <option value="BM">Bahasa Melayu</option>
+        <option value="EN">English</option>
+        <option value="ZH">中文</option>
+      </select>
+
+      <select id="tapisan-sumber" class="pilih">
+        <option value="">Semua sumber</option>
+      </select>
+
+      <select id="susun" class="pilih">
+        <option value="terkini">Terkini dahulu</option>
+        <option value="lama">Terdahulu dahulu</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="status-bar">
+    <span id="status-teks">Memuatkan berita...</span>
+    <span id="jumlah-berita"></span>
+  </div>
+
+  <main id="senarai-berita" class="grid"></main>
+
+  <div id="skeleton" class="grid">
+    <div class="kad skeleton"></div>
+    <div class="kad skeleton"></div>
+    <div class="kad skeleton"></div>
+    <div class="kad skeleton"></div>
+    <div class="kad skeleton"></div>
+    <div class="kad skeleton"></div>
+  </div>
+
+  <div id="kosong" class="kosong" hidden>
+    <p>😕 Tiada berita dijumpai untuk kategori ini.</p>
+  </div>
+
+  <footer class="footer">
+    <p>
+      Data diambil daripada RSS rasmi laman berita.
+      Semua hak cipta milik sumber asal.
+    </p>
+    <p class="kecil">
+      Dikemas kini: <span id="masa-kemas">-</span>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
