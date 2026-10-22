@@ -206,10 +206,7 @@ async function fetchMelaluiProxy(sumber) {
 
   for (const proxy of PROXIES) {
     try {
-      const res = await fetch(proxy.bina(sumber.url), {
-        cache: "no-store",
-        signal: AbortSignal.timeout(TIMEOUT_FETCH)
-      });
+      const res = await fetchTimeout(proxy.bina(sumber.url), { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       let artikel = [];
@@ -305,6 +302,17 @@ function parseXmlRss(teks, sumber) {
 
 /* ---------- 8. MUAT SEMUA ---------- */
 
+/* fetch dengan timeout; guna AbortController (AbortSignal.timeout tiada pada pelayar lama) */
+async function fetchTimeout(url, opsyen = {}) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_FETCH);
+  try {
+    return await fetch(url, { ...opsyen, signal: ctrl.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 /* Had permintaan serentak supaya proksi percuma tidak kena rate-limit */
 async function petaTerhad(senarai, fn, had) {
   const hasil = new Array(senarai.length);
@@ -322,7 +330,7 @@ async function petaTerhad(senarai, fn, had) {
 /* Utama: news.json yang dikemas kini GitHub Actions (tiada CORS / pihak ketiga) */
 async function muatDariNewsJson() {
   try {
-    const res = await fetch(URL_NEWS_JSON, { cache: "no-cache", signal: AbortSignal.timeout(TIMEOUT_FETCH) });
+    const res = await fetchTimeout(URL_NEWS_JSON, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     if (!data || !Array.isArray(data.artikel)) throw new Error("format tidak sah");
@@ -533,6 +541,16 @@ function tukarTema() {
 
 function daftarServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
+
+  // SW lama (cache-first) mungkin hidangkan app.js lama; muat semula sekali bila SW baru mengambil alih
+  if (navigator.serviceWorker.controller) {
+    let dimuatSemula = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (dimuatSemula) return;
+      dimuatSemula = true;
+      location.reload();
+    });
+  }
 
   window.addEventListener("load", () => {
     navigator.serviceWorker
