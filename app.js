@@ -2,22 +2,25 @@
    Berita Malaysia Aggregator + PWA + Kategori
    ========================================================= */
 
-/* ---------- 1. KONFIGURASI SUMBER ---------- */
+/* ---------- 1. KONFIGURASI SUMBER ----------
+   Kekalkan selari dengan scripts/ambil-berita.mjs (utama); senarai ini hanya untuk sandaran proksi. */
 const SUMBER_BERITA = [
   { nama: "Bernama",      url: "https://www.bernama.com/bm/rssfeed.php",         bahasa: "BM" },
-  { nama: "Astro Awani",  url: "https://www.astroawani.com/rss/berita-malaysia", bahasa: "BM" },
-  { nama: "Sinar Harian", url: "https://www.sinarharian.com.my/rss",             bahasa: "BM" },
-  { nama: "Harian Metro", url: "https://www.hmetro.com.my/rss",                  bahasa: "BM" },
-  { nama: "The Star",     url: "https://www.thestar.com.my/rss/News/Nation",     bahasa: "EN" },
-  { nama: "Malaysiakini", url: "https://www.malaysiakini.com/rss/news.rss",      bahasa: "EN" },
+  { nama: "Sinar Harian", url: "https://www.sinarharian.com.my/rssFeed/0",       bahasa: "BM" },
+  { nama: "Utusan",       url: "https://www.utusan.com.my/feed/",                bahasa: "BM" },
+  { nama: "FMT Bahasa",   url: "https://www.freemalaysiatoday.com/category/bahasa/feed/", bahasa: "BM" },
+  { nama: "NST",          url: "https://www.nst.com.my/feed",                    bahasa: "EN" },
+  { nama: "Malaysiakini", url: "https://www.malaysiakini.com/rss/en/news.rss",   bahasa: "EN" },
   { nama: "FMT",          url: "https://www.freemalaysiatoday.com/feed/",        bahasa: "EN" },
-  { nama: "Malay Mail",   url: "https://www.malaymail.com/feed/rss",             bahasa: "EN" },
-  { nama: "Sin Chew",     url: "https://www.sinchew.com.my/feed/",               bahasa: "ZH" }
+  { nama: "Malay Mail",   url: "https://www.malaymail.com/feed/rss",             bahasa: "EN" }
 ];
 
 const HAD_PER_SUMBER = 12;
 const TTL_CACHE = 15 * 60 * 1000;
-const KEY_CACHE = "berita_my_cache_v2";
+const KEY_CACHE = "berita_my_cache_v3";
+const URL_NEWS_JSON = "./news.json";
+const TIMEOUT_FETCH = 8000;
+const SERENTAK_MAKS = 3;
 const KEY_TEMA  = "berita_my_tema";
 
 /* ---------- 2. KATEGORI ---------- */
@@ -75,7 +78,7 @@ const KATA_KUNCI = {
   ]
 };
 
-/* ---------- 3. PROXY ---------- */
+/* ---------- 3. PROXY (sandaran jika news.json tiada/lapuk) ---------- */
 const PROXIES = [
   {
     nama: "rss2json",
@@ -85,11 +88,6 @@ const PROXIES = [
   {
     nama: "allorigins",
     bina: (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-    jenis: "xml"
-  },
-  {
-    nama: "corsproxy",
-    bina: (url) => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
     jenis: "xml"
   }
 ];
@@ -208,7 +206,10 @@ async function fetchMelaluiProxy(sumber) {
 
   for (const proxy of PROXIES) {
     try {
-      const res = await fetch(proxy.bina(sumber.url), { cache: "no-store" });
+      const res = await fetch(proxy.bina(sumber.url), {
+        cache: "no-store",
+        signal: AbortSignal.timeout(TIMEOUT_FETCH)
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       let artikel = [];
@@ -304,6 +305,39 @@ function parseXmlRss(teks, sumber) {
 
 /* ---------- 8. MUAT SEMUA ---------- */
 
+/* Had permintaan serentak supaya proksi percuma tidak kena rate-limit */
+async function petaTerhad(senarai, fn, had) {
+  const hasil = new Array(senarai.length);
+  let i = 0;
+  const pekerja = async () => {
+    while (i < senarai.length) {
+      const idx = i++;
+      hasil[idx] = await fn(senarai[idx]);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(had, senarai.length) }, pekerja));
+  return hasil;
+}
+
+/* Utama: news.json yang dikemas kini GitHub Actions (tiada CORS / pihak ketiga) */
+async function muatDariNewsJson() {
+  try {
+    const res = await fetch(URL_NEWS_JSON, { cache: "no-cache", signal: AbortSignal.timeout(TIMEOUT_FETCH) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!data || !Array.isArray(data.artikel)) throw new Error("format tidak sah");
+    return data.artikel;
+  } catch (e) {
+    console.warn("news.json gagal, guna proksi:", e.message);
+    return [];
+  }
+}
+
+async function muatDariProksi() {
+  const hasil = await petaTerhad(SUMBER_BERITA, fetchMelaluiProxy, SERENTAK_MAKS);
+  return hasil.flat();
+}
+
 async function muatSemuaBerita() {
   if (state.sedangMuat) return;
   state.sedangMuat = true;
@@ -313,8 +347,8 @@ async function muatSemuaBerita() {
   setStatus("Memuatkan berita...");
 
   try {
-    const hasil = await Promise.all(SUMBER_BERITA.map(fetchMelaluiProxy));
-    const semua = hasil.flat();
+    let semua = await muatDariNewsJson();
+    if (semua.length === 0) semua = await muatDariProksi();
 
     if (semua.length === 0) {
       const cache = bacaCache();

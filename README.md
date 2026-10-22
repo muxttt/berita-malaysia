@@ -12,6 +12,13 @@ Laman web statik (PWA) yang mengumpulkan berita Malaysia daripada pelbagai sumbe
 - Cache 15 minit (localStorage)
 - Routing hash (boleh kongsi pautan kategori, cth `#/politik`)
 
+## Cara data dikemas kini
+- Aliran GitHub Actions (`.github/workflows/update-news.yml`) jalan setiap 30 minit, menjalankan
+  `scripts/ambil-berita.mjs` yang ambil RSS terus (tiada CORS) dan commit `news.json`.
+- `app.js` baca `./news.json` dahulu; proksi (rss2json, allorigins) hanya sandaran.
+- Jalankan manual: `npm ci && npm run ambil`, atau tab **Actions → Kemas kini berita → Run workflow**.
+- Perlu **Settings → Actions → General → Workflow permissions → Read and write**.
+
 ## Cara deploy ke GitHub Pages
 
 1. Cipta repositori baru di GitHub, contohnya `berita-malaysia`.
@@ -40,6 +47,6 @@ Laman web statik (PWA) yang mengumpulkan berita Malaysia daripada pelbagai sumbe
   `manifest.json`.
 
 ## Cara tambah sumber berita
-Edit senarai `SUMBER_BERITA` dalam `app.js`:
+Edit senarai `SUMBER_BERITA` dalam `scripts/ambil-berita.mjs` (dan `app.js` untuk sandaran):
 ```js
 { nama: "Nama Sumber", url: "https://.../rss", bahasa: "BM" }

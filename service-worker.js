@@ -1,11 +1,13 @@
 /* =========================================================
    Service Worker — Berita Malaysia
    Strategi:
-   - Aset statik tempatan: cache-first (cepat + offline)
+   - index.html / app.js / style.css / news.json: network-first
+     (sentiasa versi terkini, cache hanya bila luar talian)
+   - Aset lain (ikon, manifest): cache-first
    - Permintaan luaran (RSS/proxy): biar lalu terus
    ========================================================= */
 
-const VERSI_CACHE = "berita-my-v1";
+const VERSI_CACHE = "berita-my-v2";
 const ASET_STATIK = [
   "./",
   "./index.html",
@@ -51,7 +53,31 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Aset statik tempatan — cache-first
+  // Kod & data yang kerap berubah — network-first, cache jadi sandaran offline
+  const laluan = url.pathname;
+  const segar = req.mode === "navigate" ||
+    /\/(app\.js|style\.css|index\.html|news\.json)$/.test(laluan) ||
+    laluan.endsWith("/");
+  if (segar) {
+    event.respondWith(
+      fetch(req, { cache: "no-cache" })
+        .then((res) => {
+          if (res && res.status === 200) {
+            const salinan = res.clone();
+            caches.open(VERSI_CACHE).then((cache) => cache.put(req, salinan));
+          }
+          return res;
+        })
+        .catch(() =>
+          caches.match(req).then((cached) =>
+            cached || (req.mode === "navigate" ? caches.match("./index.html") : undefined)
+          )
+        )
+    );
+    return;
+  }
+
+  // Aset statik lain — cache-first
   event.respondWith(
     caches.match(req).then((cached) => {
       if (cached) return cached;
