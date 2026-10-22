@@ -1,6 +1,15 @@
 {
- "dikemas": "2026-10-22T14:40:47.844Z",
+ "dikemas": "2026-10-22T14:52:10.439Z",
  "artikel": [
+  {
+   "tajuk": "Dunia : Negara-negara Ikrar Tingkat Pelaburan Untuk Kanak-kanak Di Bawah Deklarasi Samarkand",
+   "pautan": "http://www.bernama.com/bm/news.php?id=2624333",
+   "tarikh": "Thu, 22 Oct 2026 14:52:10 GMT",
+   "ringkasan": "Daripada Husnah Jusid SAMARKAND (Uzbekistan), 22 Okt (Bernama) -- Negara-negara yang menyertai Sidang Kemuncak Global Mengenai Pelaburan Dalam Kesejahteraan Kanak-Kanak berikrar pada Khamis untuk mengutamakan dan meningk",
+   "gambar": "",
+   "sumber": "Bernama",
+   "bahasa": "BM"
+  },
   {
    "tajuk": "Am : EPIC Berhad, Empat Anak Syarikat Terima Pengiktirafan MSOSH 2026",
    "pautan": "http://www.bernama.com/bm/news.php?id=2624327",
@@ -78,15 +87,6 @@
    "pautan": "http://www.bernama.com/bm/news.php?id=2624299",
    "tarikh": "Thu, 22 Oct 2026 14:40:46 GMT",
    "ringkasan": "KUALA LUMPUR, 22 Okt (Bernama) -- Beregu campuran negara Hoo Pang Ron-Lai Pei Jing mara ke suku akhir Terbuka Perancis 2026 selepas menewaskan gandingan Taiwan, Liu Kuang Heng-Hsu Yin-Hui di Tremblay-en-France hari ini.",
-   "gambar": "",
-   "sumber": "Bernama",
-   "bahasa": "BM"
-  },
-  {
-   "tajuk": "Ekonomi : Sektor Pengangkutan Perlu Utamakan Pertumbuhan, Kemampanan Alam Sekitar -Ã‚Â Loke",
-   "pautan": "http://www.bernama.com/bm/news.php?id=2624298",
-   "tarikh": "Thu, 22 Oct 2026 14:40:46 GMT",
-   "ringkasan": "KUALA LUMPUR, 22 Okt (Bernama) -- Masa depan sektor pengangkutan perlu menyokong pertumbuhan ekonomi jangka panjang dan pada masa sama menangani cabaran alam sekitar secara bertanggungjawab, menurut Menteri Pengangkutan ",
    "gambar": "",
    "sumber": "Bernama",
    "bahasa": "BM"
@@ -319,7 +319,7 @@
   {
    "tajuk": "Ahli Parlimen saran Langkawi diberi autonomi cukai",
    "pautan": "https://www.freemalaysiatoday.com/category/bahasa/tempatan/2026/10/22/ahli-parlimen-saran-langkawi-diberi-autonomi-cukai",
-   "tarikh": "Thu, 22 Oct 2026 13:05:00 +0000",
+   "tarikh": "Thu, 22 Oct 2026 13:05:13 +0000",
    "ringkasan": "Ahli Parlimen Langkawi Suhaimi Abdullah berkata, pulau peranginan itu boleh diberi kuasa urus cukai PBT, cukai tanah dan pelesenan, selain perkenal levi pelancongan, hotel, alam sekitar serta perkhidmatan feri. KUALA LUM",
    "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2025/11/1a4fd8ad-mohd-suhaimi-abdullah-screengrab-261125.webp",
    "sumber": "FMT Bahasa",
@@ -396,6 +396,24 @@
    "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/a9cfb9c5-4df8-4ad2-b3fb-f1c264e45952-Sekolah-Antarabangsa-Tunku-Putra-HELP-fb-211026-1.jpg",
    "sumber": "FMT Bahasa",
    "bahasa": "BM"
+  },
+  {
+   "tajuk": "La Liga chief risks sanction after comparing Real Madrid to Goebbels",
+   "pautan": "https://www.nst.com.my/sports/football/2026/10/1561603/la-liga-chief-risks-sanction-after-comparing-real-madrid-goebbels",
+   "tarikh": "Thu, 22 Oct 2026 22:49:17 +0800",
+   "ringkasan": "BARCELONA: La Liga president Javier Tebas could face disciplinary action for comparing Real Madrid's communication methods with those of Nazi propaganda minister Joseph Goebbels, after Spain's national sports council (CS",
+   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/ED61B0775DA4C2CCB4A49E3407B06592_data_0.jpg",
+   "sumber": "NST",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "France fast-tracks trials, jails suspects after weekend riots",
+   "pautan": "https://www.nst.com.my/world/world/2026/10/1561601/france-fast-tracks-trials-jails-suspects-after-weekend-riots",
+   "tarikh": "Thu, 22 Oct 2026 22:42:42 +0800",
+   "ringkasan": "PARIS: French courts have swiftly handed out verdicts, including orders to serve jail time, in fast-track justice for defendants accused over the rioting that erupted on the sidelines of protests at the weekend. The gove",
+   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/C404C406D7734A130A65F9697DC907F1_data_0_0.jpg",
+   "sumber": "NST",
+   "bahasa": "EN"
   },
   {
    "tajuk": "Israel releases nine suspects in settler attacks to house arrest",
@@ -484,24 +502,6 @@
    "tarikh": "Thu, 22 Oct 2026 21:25:20 +0800",
    "ringkasan": "SUNGAI PETANI: Nine men were charged in the Sessions Court with being members of an organised crime group known as 'Geng Suria'. They were Thayalan, 28; A. Tana Balan, 30; Muhamad Rizwan Abd Jalil, 28; G. Sritharan, 39; ",
    "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/7317ADB87E61B7A7731DE8124AEEA0C3_data_0_0.jpg",
-   "sumber": "NST",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "Indonesia channels US$68mil to tackle fires, haze",
-   "pautan": "https://www.nst.com.my/world/region/2026/10/1561566/indonesia-channels-us68mil-tackle-fires-haze",
-   "tarikh": "Thu, 22 Oct 2026 21:24:54 +0800",
-   "ringkasan": "JAKARTA: Indonesia has disbursed a second tranche of 1.235 trillion rupiah (about US$68 million) in central government aid to combat forest and land fires, with priority given to healthcare services for affected resident",
-   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/2344347CF0C718BD8751046CE212358A_data_0.jpg",
-   "sumber": "NST",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "Saudi Aramco orders Dhahran headquarters evacuation as Houthi attacks intensify",
-   "pautan": "https://www.nst.com.my/world/world/2026/10/1561564/saudi-aramco-orders-dhahran-headquarters-evacuation-houthi-attacks",
-   "tarikh": "Thu, 22 Oct 2026 21:19:31 +0800",
-   "ringkasan": "RIYADH: Saudi state oil company Aramco has told staff to evacuate its headquarters in Dhahran on the Gulf, six people with knowledge of the matter told Reuters on Thursday, as fighting between the world's largest crude e",
-   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/A325A5A6EC36F2C94DFBAFFAEBCBDD28_data_0.jpg",
    "sumber": "NST",
    "bahasa": "EN"
   },
@@ -596,7 +596,7 @@
    "bahasa": "EN"
   },
   {
-   "tajuk": "5,234 ‘expert’ Malaysians returned home under govt drive since 2011",
+   "tajuk": "5,234 ‘expert’ Malaysians return home under govt drive since 2011",
    "pautan": "https://www.freemalaysiatoday.com/category/nation/2026/10/22/5-234-expert-malaysians-return-home-under-govt-drive-since-2011",
    "tarikh": "Thu, 22 Oct 2026 14:33:00 +0000",
    "ringkasan": "The Returning Expert Programme was launched by TalentCorp in 2011 with the goal of luring highly skilled Malaysians back to the country to contribute to its economy. (Pexels pic) PETALING JAYA: A total of 5,234 highly sk",
