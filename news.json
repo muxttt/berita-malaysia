@@ -1,5 +1,5 @@
 {
- "dikemas": "2026-10-23T19:22:11.872Z",
+ "dikemas": "2026-10-23T22:24:50.220Z",
  "artikel": [
   {
    "tajuk": "Ekonomi : Kerajaan Galak Syarikat Tempatan Rangka Strategi Jangka Panjang, Kurangkan Import",
@@ -89,6 +89,15 @@
    "ringkasan": "JOHOR BAHRU, 23 Okt (Bernama) -- Ketua jurulatih skuad hoki remaja lelaki negara, Nor Saiful Zaini Nasiruddin menyifatkan Pakistan sebagai pasukan pilihan menjelang pertembungan di pentas final Kejohanan Hoki Piala Sulta",
    "gambar": "",
    "sumber": "Bernama",
+   "bahasa": "BM"
+  },
+  {
+   "tajuk": "SINAR HARIAN 24 OKTOBER 2026",
+   "pautan": "https://www.sinarharian.com.my/article/801673/e-paper/e-daily/sinar-harian-24-oktober-2026",
+   "tarikh": "Sat, 24 Oct 2026 06:00:00 +0800",
+   "ringkasan": "",
+   "gambar": "",
+   "sumber": "Sinar Harian",
    "bahasa": "BM"
   },
   {
@@ -186,15 +195,6 @@
    "pautan": "https://www.sinarharian.com.my/article/801661/berita/nasional/tun-m-kongsi-video-solat-jumaat-di-masjid-negara-warga-maya-titip-doa",
    "tarikh": "Fri, 23 Oct 2026 20:32:00 +0800",
    "ringkasan": "SHAH ALAM - Bekas Perdana Menteri, Tun Dr Mahathir Mohamad menunaikan solat Jumaat di Masjid Negara di sini pada Jumaat, sekali gus menarik perhatian jemaah yang hadir.Negarawan berusia 101 tahun itu kelihatan sihat dan ",
-   "gambar": "",
-   "sumber": "Sinar Harian",
-   "bahasa": "BM"
-  },
-  {
-   "tajuk": "Yayasan LTAT, USM perkasa anak warga ATM kuasai bidang STEM berteknologi tinggi",
-   "pautan": "https://www.sinarharian.com.my/article/801660/edisi/selangor-kl/yayasan-ltat-usm-perkasa-anak-warga-atm-kuasai-bidang-stem-berteknologi-tinggi",
-   "tarikh": "Fri, 23 Oct 2026 20:22:00 +0800",
-   "ringkasan": "KUALA LUMPUR - Yayasan Lembaga Tabung Angkatan Tentera (Yayasan LTAT) dengan kerjasama Universiti Sains Malaysia (USM) terus melangkah ke hadapan dalam memperkasa pendidikan anak-anak warga Angkatan Tentera Malaysia (ATM",
    "gambar": "",
    "sumber": "Sinar Harian",
    "bahasa": "BM"
@@ -322,8 +322,8 @@
    "tarikh": "Fri, 23 Oct 2026 15:24:00 +0000",
    "ringkasan": "Perdana Menteri Anwar Ibrahim berkata generasi baharu dan pihak industri mesti ada kesediaan untuk memiliki keupayaan kalau mahu negara dibangunkan. KUALA LUMPUR: Perdana Menteri Anwar Ibrahim menyuarakan kekecewaan meli",
    "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/907b8014-7968-4f99-9abf-559551431636-Anwar-Ibrahim-fmt-231026-1.jpg",
-   "sumber": "FMT",
-   "bahasa": "EN"
+   "sumber": "FMT Bahasa",
+   "bahasa": "BM"
   },
   {
    "tajuk": "TuJu mohon maaf kepada pengguna, kerja pemulihan sedang dilaksana",
@@ -396,6 +396,33 @@
    "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/e79e9c29-b67c-4465-93a8-cdfbdab16870-TuJu-Interface.webp",
    "sumber": "FMT Bahasa",
    "bahasa": "BM"
+  },
+  {
+   "tajuk": "Protests expected in Rome, Milan under heavy security",
+   "pautan": "https://www.nst.com.my/world/world/2026/10/1562301/protests-expected-rome-milan-under-heavy-security",
+   "tarikh": "Sat, 24 Oct 2026 06:19:45 +0800",
+   "ringkasan": "ROME: Security forces are deploying in large numbers across Italy on Saturday for protests planned in eight cities, including Rome and Milan, after some demonstrations turned violent last weekend. The demonstrations come",
+   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/FE9795AC42F98FC88A9486DAEAF8EB3D_data_0.jpg",
+   "sumber": "NST",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Trump orders lawsuit to block Alaska Senate result if Republicans lose",
+   "pautan": "https://www.nst.com.my/world/world/2026/10/1562297/trump-orders-lawsuit-block-alaska-senate-result-if-republicans-lose",
+   "tarikh": "Sat, 24 Oct 2026 06:09:41 +0800",
+   "ringkasan": "WASHINGTON: President Donald Trump said on Friday that he had ordered a Justice Department lawsuit seeking to prevent certification of Alaska's Senate election result if the Republican incumbent loses — raising further q",
+   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/C1F103DC680F11139FFD30B7216F82F5_data_0.jpg",
+   "sumber": "NST",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Ebola vaccine trial begins in DR Congo",
+   "pautan": "https://www.nst.com.my/world/world/2026/10/1562295/ebola-vaccine-trial-begins-dr-congo",
+   "tarikh": "Sat, 24 Oct 2026 06:03:16 +0800",
+   "ringkasan": "GENEVA: The first clinical trial of an Ebola vaccine during the outbreak gripping the Democratic Republic of Congo began on Friday, the head of the World Health Organisation said. The DR Congo's worst-ever Ebola outbreak",
+   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/003C71C3BD1F3A059461321462A79369_data_0.jpg",
+   "sumber": "NST",
+   "bahasa": "EN"
   },
   {
    "tajuk": "Singapore widens haze probe to local firms linked to Indonesian fires",
@@ -475,33 +502,6 @@
    "tarikh": "Fri, 23 Oct 2026 23:26:40 +0800",
    "ringkasan": "JOHOR BARU: A family's plans to celebrate a 7-year-old boy's birthday next week were shattered when he died after falling from the 10th floor of their home at the Sungai Melana Phase 2 People's Housing Project (PPR) in T",
    "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/04284164BF4C4D8D61337DE60AFFBD78_data_0.jpg",
-   "sumber": "NST",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "Nga: Future cities must balance modern technology with heritage preservation",
-   "pautan": "https://www.nst.com.my/news/nation/2026/10/1562264/nga-future-cities-must-balance-modern-technology-heritage-preservation",
-   "tarikh": "Fri, 23 Oct 2026 23:21:38 +0800",
-   "ringkasan": "PUTRAJAYA: Future urban development must balance technological advancement with the preservation of national heritage and identity to create comfortable, sustainable and climate-resilient cities. Housing and Local Govern",
-   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/F881732DB40E51B15866F3C7FC7D34BA_data_0.jpg",
-   "sumber": "NST",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "ECRL-Gombak LRT pedestrian bridge to be completed by March 2027",
-   "pautan": "https://www.nst.com.my/news/nation/2026/10/1562261/ecrl-gombak-lrt-pedestrian-bridge-be-completed-march-2027",
-   "tarikh": "Fri, 23 Oct 2026 23:16:57 +0800",
-   "ringkasan": "KUALA LUMPUR: A covered pedestrian bridge linking the East Coast Rail Link (ECRL) Gombak station directly to the Gombak LRT station is expected to be completed by March next year. Malaysia Rail Link Sdn Bhd (MRL), in a s",
-   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/4FBA1A70D9E516FDA76A48593F5FFA57_data.jpg",
-   "sumber": "NST",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "PN deregistration within 28 days breached law, claims Hamzah",
-   "pautan": "https://www.nst.com.my/news/nation/2026/10/1562259/pn-deregistration-within-28-days-breached-law-claims-hamzah",
-   "tarikh": "Fri, 23 Oct 2026 23:15:58 +0800",
-   "ringkasan": "KOTA BARU: Datuk Seri Hamzah Zainudin has claimed that the Registrar of Societies (RoS) acted unlawfully by cancelling Perikatan Nasional's registration within 28 days, instead of the 30-day period stipulated by law. Ham",
-   "gambar": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/D0E51B06A2329656CB2245C928C47D51_data_0.jpg",
    "sumber": "NST",
    "bahasa": "EN"
   },
@@ -596,6 +596,51 @@
    "bahasa": "EN"
   },
   {
+   "tajuk": "Wall Street closes lower to end rocky week",
+   "pautan": "https://www.freemalaysiatoday.com/category/business/2026/10/24/wall-street-closes-lower-to-end-rocky-week",
+   "tarikh": "Fri, 23 Oct 2026 21:44:26 +0000",
+   "ringkasan": "For the week, the S&P 500 fell 0.5% and the Nasdaq dropped 0.7%. The blue-chip Dow rose 0.4%, its third straight weekly gain. (AFP pic) NEW YORK: Wall Street's main indexes closed lower on Friday even as technology share",
+   "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/07/112f18d6-afp__20240820__2167560269__v1__midres__marketsopentuesdaymorningaftersp500posts8thst_1_cropped.webp",
+   "sumber": "FMT",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Netanyahu launches major West Bank operation after Israeli soldiers killed",
+   "pautan": "https://www.freemalaysiatoday.com/category/highlight/2026/10/24/netanyahu-launches-major-west-bank-operation-after-israeli-soldiers-killed",
+   "tarikh": "Fri, 23 Oct 2026 21:29:00 +0000",
+   "ringkasan": "Israeli prime minister Benjamin Netanyahu's announcement comes days ahead of Israeli elections in which security has been a central focus. (EPA Images pic) HEBRON: Prime Minister Benjamin Netanyahu announced a major mili",
+   "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/05/91d568bc-benjamin-netanyahu.jpg",
+   "sumber": "FMT",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Russia says Ukraine, US talks ‘planned’ for Abu Dhabi",
+   "pautan": "https://www.freemalaysiatoday.com/category/highlight/2026/10/24/russia-says-ukraine-us-talks-planned-for-abu-dhabi-2",
+   "tarikh": "Fri, 23 Oct 2026 21:21:00 +0000",
+   "ringkasan": "Russian president Vladimir Putin said any trilateral talks would focus on the security arrangements of a final peace deal and not a 'short' truce. (Sputnik/EPA Images pic) MOSCOW: Talks between Russia, Ukraine and the Un",
+   "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/07/f862c98d-source-sputnik-epa-images-vladimir-putin-russia-critics-18072026.webp",
+   "sumber": "FMT",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Leclerc tops times for Ferrari in opening practice for US Grand Prix",
+   "pautan": "https://www.freemalaysiatoday.com/category/sports/2026/10/24/leclerc-tops-times-for-ferrari-in-opening-practice-for-us-grand-prix",
+   "tarikh": "Fri, 23 Oct 2026 21:15:00 +0000",
+   "ringkasan": "Ferrari driver Charles Leclerc in action during the first practice session for the US Grand Prix. (EPA Images pic) AUSTIN: Charles Leclerc topped the times for Ferrari ahead of Red Bull’s four-time champion Max Verstappe",
+   "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/00a3c28d-ad70-4b27-a139-6b0b737431f5-EPA-Images---Charles-Leclerc---US-Grand-Prix---24102026.webp",
+   "sumber": "FMT",
+   "bahasa": "EN"
+  },
+  {
+   "tajuk": "Bayern Munich coach Kompany in hospital after collapsing",
+   "pautan": "https://www.freemalaysiatoday.com/category/sports/2026/10/24/bayern-munich-coach-kompany-in-hospital-after-collapsing",
+   "tarikh": "Fri, 23 Oct 2026 21:05:35 +0000",
+   "ringkasan": "In 74 Bundesliga games under Vincent Kompany, Bayern Munich have won 57 and lost three. (EPA Images pic) BERLIN: Bayern Munich coach Vincent Kompany was taken to hospital by an emergency medical team on Friday after coll",
+   "gambar": "https://media.freemalaysiatoday.com/v3/2026/08/3c1ae646-f74c-4d6b-bc54-eb78d04a04e4-Vincent-Kompany.jpg",
+   "sumber": "FMT",
+   "bahasa": "EN"
+  },
+  {
    "tajuk": "Anwar disappointed to see ‘rigid thinking’ in Parliament",
    "pautan": "https://www.freemalaysiatoday.com/category/nation/2026/10/24/anwar-disappointed-to-see-rigid-thinking-in-parliament",
    "tarikh": "Fri, 23 Oct 2026 16:10:00 +0000",
@@ -628,42 +673,6 @@
    "tarikh": "Fri, 23 Oct 2026 15:45:00 +0000",
    "ringkasan": "IQAir ranked Singapore among the world’s 10 most polluted major cities late Friday. (EPA Images pic) SINGAPORE: Singapore expanded on Friday its probe into companies linked to fires in Indonesia, asking 10 locally based ",
    "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/133d9d38-c8d8-4b86-a43d-138b4b4b8643-singapore-haze-epa-161026.jpg",
-   "sumber": "FMT",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "PAS needs Wawasan even if PN is deregistered, says ex-Umno leader",
-   "pautan": "https://www.freemalaysiatoday.com/category/nation/2026/10/23/pas-needs-wawasan-even-if-pn-is-deregistered-says-ex-umno-leader",
-   "tarikh": "Fri, 23 Oct 2026 15:22:00 +0000",
-   "ringkasan": "Wawasan president Hamzah Zainudin is an outstanding political operator, said former Umno information chief Shahril Hamdan. PETALING JAYA: PAS would likely continue working with Hamzah Zainudin's Wawasan in the event Peri",
-   "gambar": "https://media.freemalaysiatoday.com/v3/2026/08/936f521a-c3e2-469e-879b-76be6311cc1d-INTERVIEW-PRESIDEN-PARTI-WAWASAN-NEGARA-HAMZAH-ZAINUDIN-10.jpg",
-   "sumber": "FMT",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "US authorises emergency release of up to 400,000 barrels of oil from reserve",
-   "pautan": "https://www.freemalaysiatoday.com/category/business/2026/10/23/us-authorises-emergency-release-of-up-to-400-000-oil-barrels-from-strategic-reserve",
-   "tarikh": "Fri, 23 Oct 2026 15:22:00 +0000",
-   "ringkasan": "The Strategic Petroleum Reserve has already been at the lowest level since 1982, after President Donald Trump tapped it as the US war on Iran disrupted supply lines. (Envato Elements pic) WASHINGTON: The US department of",
-   "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/06/d51473eb-oil-barrels-envato-elements-pic-090626-2.webp",
-   "sumber": "FMT",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "Liverpool must go ‘full gas’ despite injury issues, says Iraola",
-   "pautan": "https://www.freemalaysiatoday.com/category/sports/2026/10/23/liverpool-must-go-full-gas-despite-injury-issues-says-iraola",
-   "tarikh": "Fri, 23 Oct 2026 15:05:10 +0000",
-   "ringkasan": "Andoni Iraola's high-energy style at Bournemouth reaped success and earned him the job at Anfield, but he now must deal with the added demands of European football. (EPA Images pic) LIVERPOOL: Liverpool manager Andoni Ir",
-   "gambar": "https://media.freemalaysiatoday.com/wp-content/uploads/2026/06/13676405-Andoni-Iraola.webp",
-   "sumber": "FMT",
-   "bahasa": "EN"
-  },
-  {
-   "tajuk": "U Mobile takes 5G roadshow to East Coast after reaching 90% coverage",
-   "pautan": "https://www.freemalaysiatoday.com/category/nation/2026/10/23/u-mobile-takes-5g-roadshow-to-east-coast-after-reaching-90-coverage",
-   "tarikh": "Fri, 23 Oct 2026 14:55:00 +0000",
-   "ringkasan": "U Mobile kicked off its Jelajah ULTRA5G roadshow with a special appearance by two 5G-enabled humanoid robots in Kuantan, Pahang, on Friday. (UMobile pic) PETALING JAYA: U Mobile will take its ULTRA5G roadshow to Kuantan,",
-   "gambar": "https://media.freemalaysiatoday.com/v3/2026/10/ec068bb9-7fe6-4cd8-84c0-073c473c9580-jelajah-5g-umobile-emel-pic-231026-1.jpg",
    "sumber": "FMT",
    "bahasa": "EN"
   },
